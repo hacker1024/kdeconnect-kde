@@ -9,7 +9,7 @@ include_directories(
 add_subdirectory(backends/lan)
 add_subdirectory(backends/loopback)
 
-option(BLUETOOTH_ENABLED "Bluetooth support for kdeconnect" OFF)
+option(BLUETOOTH_ENABLED "Bluetooth support for kdeconnect" ON)
 if(BLUETOOTH_ENABLED)
     find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Bluetooth)
     add_subdirectory(backends/bluetooth)
